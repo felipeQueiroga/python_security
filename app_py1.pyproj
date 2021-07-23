@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fb629344-c8ba-497e-ae96-5777cea24e1a}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>13_open_browser\open_browser.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="02_ping_tcp_udp\cliente_tcp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="02_ping_tcp_udp\cliente_udp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="02_ping_tcp_udp\port_scanner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="02_ping_tcp_udp\server_udp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="04_gerar_senhas\compara_hash.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="04_gerar_senhas\gera_pwd.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03_gera_hash\gerador_hash.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\arquivos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\contador_letras.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\datas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\excecao_personalizada.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\excecoes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\funcao_class.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\lambda_impostacoes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="01_Introducao\requisicoes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="05_ipaddress\ips.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="02_ping_tcp_udp\ping_multiplos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="02_ping_tcp_udp\ping_simples.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="06_threads\corrida_carros.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="08_web_crawler\web_crawler.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="07_web_scraping\web_scraping.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="09_word_lists\word_list.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="10_verifica_telefone\valida_telefone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="11_ocultador_arquivos\ocultador.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="12_verifica_ip_externo\meu_ip_publico.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="13_open_browser\open_browser.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="01_Introducao\" />
+    <Folder Include="02_ping_tcp_udp\" />
+    <Folder Include="04_gerar_senhas\" />
+    <Folder Include="05_ipaddress\" />
+    <Folder Include="03_gera_hash\" />
+    <Folder Include="08_web_crawler\" />
+    <Folder Include="07_web_scraping\" />
+    <Folder Include="09_word_lists\" />
+    <Folder Include="06_threads\" />
+    <Folder Include="10_verifica_telefone\" />
+    <Folder Include="11_ocultador_arquivos\" />
+    <Folder Include="12_verifica_ip_externo\" />
+    <Folder Include="13_open_browser\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="04_gerar_senhas\a.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="04_gerar_senhas\b.txt">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="07_web_scraping\site.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="11_ocultador_arquivos\arquivo_oculto.txt">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
